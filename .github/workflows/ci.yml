@@ -6,15 +6,16 @@ on:
       - main
       - develop
       - test
+
   push:
     branches:
+      - main
       - develop
       - test
-      - main
 
 jobs:
   quality-check:
-    name: Lint, Test and Build
+    name: Lint Test Build
     runs-on: ubuntu-latest
 
     steps:
@@ -34,7 +35,7 @@ jobs:
         run: npm run lint
 
       - name: Run unit tests
-        run: npm run test:coverage
+        run: npm run test
 
       - name: Build application
         run: npm run build
