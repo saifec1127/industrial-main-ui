@@ -4,6 +4,10 @@ import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { LoginPage } from "./LoginPage";
 import { DashboardPage } from "./DashboardPage";
 
+jest.mock("../features/user/UserTab", () => ({
+  UserTab: () => <div data-testid="mock-user-tab">Mock User Tab</div>,
+}));
+
 describe("LoginPage", () => {
   test("should render login page with email, password and login button", () => {
     render(
@@ -35,5 +39,7 @@ describe("LoginPage", () => {
     expect(
       screen.getByRole("heading", { name: /dashboard page/i })
     ).toBeInTheDocument();
+
+    expect(screen.getByTestId("mock-user-tab")).toBeInTheDocument();
   });
 });
