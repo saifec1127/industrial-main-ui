@@ -1,0 +1,7 @@
+{
+  "stepDefinitions": ["cypress/e2e/**/*.cy.ts"],
+  "messages": {
+    "enabled": true,
+    "output": "cypress/reports/messages.ndjson"
+  }
+}
