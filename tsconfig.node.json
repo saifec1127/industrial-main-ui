@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "composite": true,
+    "outDir": "node_modules/.cache/tsc-node",
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
   },
   "include": ["vite.config.ts", "cypress.config.ts"]
 }

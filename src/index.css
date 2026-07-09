@@ -105,3 +105,35 @@ input {
   border-radius: 16px;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
+
+.user-tab {
+  margin-top: 32px;
+}
+
+.user-tab h2 {
+  margin-bottom: 16px;
+  color: #111827;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.user-card {
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.user-card h3 {
+  margin: 0 0 10px;
+  color: #2563eb;
+}
+
+.user-card p {
+  margin: 6px 0;
+  color: #374151;
+}
