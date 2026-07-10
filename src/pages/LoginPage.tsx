@@ -11,6 +11,7 @@ export function LoginPage() {
     <main className="login-page">
       <section className="login-card">
         <h1 className="login-title">Login</h1>
+
         <p className="login-subtitle">
           Welcome back. Please login to continue.
         </p>

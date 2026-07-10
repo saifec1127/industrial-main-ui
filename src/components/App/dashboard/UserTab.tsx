@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { fetchUsers } from "./userSlice";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { fetchUsers } from "../../../state/user/userSlice";
+import { useAppDispatch, useAppSelector } from "../../../state/hooks";
 
 export function UserTab() {
   const dispatch = useAppDispatch();

@@ -1,4 +1,4 @@
-import { UserTab } from "../features/user/UserTab";
+import { UserTab } from "../components/App/dashboard";
 
 export function DashboardPage() {
   return (

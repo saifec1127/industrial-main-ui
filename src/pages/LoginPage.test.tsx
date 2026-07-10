@@ -4,7 +4,7 @@ import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { LoginPage } from "./LoginPage";
 import { DashboardPage } from "./DashboardPage";
 
-jest.mock("../features/user/UserTab", () => ({
+jest.mock("../components/App/dashboard", () => ({
   UserTab: () => <div data-testid="mock-user-tab">Mock User Tab</div>,
 }));
 
