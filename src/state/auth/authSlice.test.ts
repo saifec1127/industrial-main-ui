@@ -1,4 +1,4 @@
-import authReducer, { loginSuccess, logout } from "../store/authSlice";
+import authReducer, { loginSuccess, logout } from "./authSlice";
 
 describe("authSlice", () => {
   test("should login user successfully", () => {

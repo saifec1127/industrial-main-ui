@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { DashboardPage } from "./DashboardPage";
 
-jest.mock("../features/user/UserTab", () => ({
+jest.mock("../components/App/dashboard", () => ({
   UserTab: () => <div data-testid="mock-user-tab">Mock User Tab</div>,
 }));
 

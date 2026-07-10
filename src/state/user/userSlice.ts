@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import { fetchUsersGraphQL } from "./user.service";
-import type { User } from "./user.types";
+import { UserService } from "../../services/user/UserService";
+import type { User } from "../../services/user/models/user.types";
 
 type UserState = {
   users: User[];
@@ -15,8 +15,7 @@ const initialState: UserState = {
 };
 
 export const fetchUsers = createAsyncThunk("user/fetchUsers", async () => {
-  const users = await fetchUsersGraphQL();
-  return users;
+  return UserService.getUsers();
 });
 
 const userSlice = createSlice({

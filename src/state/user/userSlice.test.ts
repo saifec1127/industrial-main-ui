@@ -1,5 +1,5 @@
 import userReducer, { clearUsers, fetchUsers } from "./userSlice";
-import type { User } from "./user.types";
+import type { User } from "../../services/user/models/user.types";
 
 describe("userSlice", () => {
   const users: User[] = [

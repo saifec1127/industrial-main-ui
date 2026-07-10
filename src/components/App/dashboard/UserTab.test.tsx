@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import userReducer from "./userSlice";
+import userReducer from "../../../state/user/userSlice";
 import { UserTab } from "./UserTab";
 
 const mockUsers = [
